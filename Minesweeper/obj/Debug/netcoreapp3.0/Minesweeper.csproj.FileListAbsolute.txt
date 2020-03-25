@@ -9,3 +9,8 @@ C:\Users\jerry\source\repos\Minesweeper\Minesweeper\obj\Debug\netcoreapp3.0\Mine
 C:\Users\jerry\source\repos\Minesweeper\Minesweeper\obj\Debug\netcoreapp3.0\Minesweeper.AssemblyInfo.cs
 C:\Users\jerry\source\repos\Minesweeper\Minesweeper\obj\Debug\netcoreapp3.0\Minesweeper.dll
 C:\Users\jerry\source\repos\Minesweeper\Minesweeper\obj\Debug\netcoreapp3.0\Minesweeper.pdb
+C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweeper\obj\Debug\netcoreapp3.0\Minesweeper.csprojAssemblyReference.cache
+C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweeper\obj\Debug\netcoreapp3.0\Minesweeper.AssemblyInfoInputs.cache
+C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweeper\obj\Debug\netcoreapp3.0\Minesweeper.AssemblyInfo.cs
+C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweeper\obj\Debug\netcoreapp3.0\Minesweeper.dll
+C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweeper\obj\Debug\netcoreapp3.0\Minesweeper.pdb

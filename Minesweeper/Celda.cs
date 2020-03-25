@@ -20,9 +20,14 @@ namespace Minesweeper
 
         private Status status;
 
+        public Celda()
+        {
+            this.status = Status.HIDDEN;
+        }
+
         public int GetValue()
         {
-            throw new NotImplementedException();
+            return this.valor;
         }
 
         public bool IsHidden()
@@ -38,6 +43,10 @@ namespace Minesweeper
         public void RightClick()
         {
             throw new NotImplementedException();
+        }
+        public Status GetStatus()
+        {
+            return this.status;
         }
     }
 }
