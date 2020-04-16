@@ -6,7 +6,7 @@ namespace Minesweeper
     {
         static void Main(string[] args)
         {
-            ConsoleGame<Celda> game = new ConsoleGame<Celda>(6, 7, 5);
+            ConsoleGame<Celda> game = new ConsoleGame<Celda>(6, 7, 10);
             Console.ReadKey();
         }
     }

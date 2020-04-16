@@ -14,3 +14,9 @@ C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweepe
 C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweeper\obj\Debug\netcoreapp3.0\Minesweeper.AssemblyInfo.cs
 C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweeper\obj\Debug\netcoreapp3.0\Minesweeper.dll
 C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweeper\obj\Debug\netcoreapp3.0\Minesweeper.pdb
+C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweeper\bin\Debug\netcoreapp3.0\Minesweeper.exe
+C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweeper\bin\Debug\netcoreapp3.0\Minesweeper.deps.json
+C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweeper\bin\Debug\netcoreapp3.0\Minesweeper.runtimeconfig.json
+C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweeper\bin\Debug\netcoreapp3.0\Minesweeper.runtimeconfig.dev.json
+C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweeper\bin\Debug\netcoreapp3.0\Minesweeper.dll
+C:\Users\jerry\OneDrive\Desktop\UP\AERO SAE\Programación\Minesweeper\Minesweeper\bin\Debug\netcoreapp3.0\Minesweeper.pdb

@@ -15,46 +15,49 @@ namespace Minesweeper
             this.hiddenSymbol = (char)9632;
             this.mineSymbol = '*';
             this.flagSymbol = '#';
+            this.ShowGrid();
         }
-    }
-    public void ShowGrid()
-    {
-        Console.WriteLine("".PadRight(4));
-        for (uint i = 0; i < this.Width; i++)
+        public void ShowGrid()
         {
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.WriteLine((char(65 + i) + "  ");
-        }
-        Console.WriteLine();
-        string printingValue;
-        for (uint i = 0; i < this.Height; i++)
-        {
-            Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write(((i+1) + "  ").PadLeft(4));
-            Console.ForegroundColor = ConsoleColor.White;
-            for (int j = 0; j < this.width; j++)
+            Console.Write(("").PadLeft(4));
+            for (uint i = 0; i < this.Width; i++)
             {
-                switch (this.celdas[j, i].GetStatus())
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine((char)(65 + i) + "  ");
+            }
+            Console.WriteLine();
+            string printingValue;
+            for (uint i = 0; i < this.Height; i++)
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.Write(((i + 1) + "  ").PadLeft(4));
+                Console.ForegroundColor = ConsoleColor.White;
+                for (int j = 0; j < this.Width; j++)
                 {
-                    case Celda.Status.SHOWN:
-                        if (this.celdas[j,i] is Mine)
-                        {
-                            printingValue = this.mineSymbol.ToString();
-                        }
-                        else
-                        {
-                            printingValue = "" + this.celdas[j, i].GetValue();
-                        }
-                        break;
-                    case Celda.Status.FLAG:
-                        printingValue = "" + this.flagSymbol;
-                        break;
-                    default:
-                        printingValue = "" + this.hiddenSymbol;
-                        break;
+
+                    switch (this.celdas[j, i].GetStatus())
+                    {
+                        case Celda.Status.SHOWN:
+                            if (this.celdas[j, i] is Mina)
+                            {
+                                printingValue = this.mineSymbol.ToString();
+                            }
+                            else
+                            {
+                                printingValue = "" + this.celdas[j, i].GetValue();
+                            }
+                            break;
+                        case Celda.Status.FLAG:
+                            printingValue = "" + this.flagSymbol;
+                            break;
+                        default:
+                            printingValue = "" + this.hiddenSymbol;
+                            break;
+                    }
+                    Console.Write(printingValue + " ");
                 }
-                Console.Write(printingValue + " ");
             }
         }
     }
 }
+    

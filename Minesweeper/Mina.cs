@@ -30,5 +30,9 @@ namespace Minesweeper
         {
             throw new NotImplementedException();
         }
+        public Celda.Status GetStatus()
+        {
+            return status;
+        }
     }
 }
