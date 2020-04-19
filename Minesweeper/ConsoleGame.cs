@@ -19,32 +19,31 @@ namespace Minesweeper
         }
         public void ShowGrid()
         {
-            Console.Write(("").PadLeft(4));
-            for (uint i = 0; i < this.Width; i++)
+            Console.Write((" ").PadLeft(4));
+            for (int i = 0; i < Width; i++)
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine((char)(65 + i) + "  ");
+                Console.Write((char)(65 + i) + " ");
             }
             Console.WriteLine();
             string printingValue;
             for (uint i = 0; i < this.Height; i++)
             {
                 Console.ForegroundColor = ConsoleColor.Blue;
-                Console.Write(((i + 1) + "  ").PadLeft(4));
+                Console.Write(((i + 1) + " ").PadLeft(4));
                 Console.ForegroundColor = ConsoleColor.White;
                 for (int j = 0; j < this.Width; j++)
                 {
-
-                    switch (this.celdas[j, i].GetStatus())
+                    switch (this.celdas[j, i].cell.GetStatus())
                     {
                         case Celda.Status.SHOWN:
-                            if (this.celdas[j, i] is Mina)
+                            if (this.celdas[j, i].cell is Mina)
                             {
                                 printingValue = this.mineSymbol.ToString();
                             }
                             else
                             {
-                                printingValue = "" + this.celdas[j, i].GetValue();
+                                printingValue = "" + ((Celda)this.celdas[j, i].cell).GetValue(); //con el .cell esta llamandolo desde cellnode
                             }
                             break;
                         case Celda.Status.FLAG:
@@ -56,6 +55,7 @@ namespace Minesweeper
                     }
                     Console.Write(printingValue + " ");
                 }
+                Console.WriteLine();
             }
         }
     }
