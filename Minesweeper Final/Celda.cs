@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Minesweeper
 {
-    class Celda : ICell
+    public class Celda : ICell
     {
         public enum Status
         {

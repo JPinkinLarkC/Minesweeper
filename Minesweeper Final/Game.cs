@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Minesweeper
 {
-    class Game <T> where T :  ICell, new()
+    public partial class Game <T> where T :  ICell, new()
     {
 
             protected int tiempo;
@@ -18,21 +18,37 @@ namespace Minesweeper
             protected ICell[,] celdas;
 
 
-            public Game(int Widht, int Height, int minas)
-            {
-                this.Width = Widht;
-                this.Height = Height;
-                this.TotalMinas = minas;
+        public Game(int Widht, int Height, int minas)
+        {
+            this.Width = Widht;
+            this.Height = Height;
+            this.TotalMinas = minas;
 
-                this.celdas = new ICell[Widht, Height];
-                for (int i = 0; i < this.Width; i++)
+            this.celdas = new ICell[Widht, Height];
+            for (int i = 0; i < this.Width; i++)
+            {
+                for (uint j = 0; j < this.Height; j++)
                 {
-                    for (uint j = 0; j < this.Height; j++)
-                    {
                     this.celdas[i, j] = new T();
-                    }
                 }
 
             }
+            this.GenerateMines();
+
+        }
+        public int FlagCount
+        {
+            get { return this.FlagCounter; }
+        }
+
+        public int HeightGetter
+        {
+            get { return this.Height; }
+        }
+
+        public int WidthGetter
+        {
+            get { return this.Width; }
+        }
     }
 }
